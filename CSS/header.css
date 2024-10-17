@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Montserrat", sans-serif;
+}
+.navbar {
+  height: 10vh;
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  position: sticky;
+  background-color: white;
+  top: 0;
+  /* opacity: 70%; */
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+  z-index: 20;
+  transition: all 0.3s;
+}
+.outnavgen {
+  display: flex;
+  column-gap: 20px;
+  justify-content: space-around;
+  padding: 10px;
+  /* position: relative; */
+}
+.logoimg {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.navgen {
+  flex: 0.5;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  align-items: center;
+  transition: all 0.3s;
+  z-index: 10;
+  /* overflow: hidden; */
+  position: relative;
+}
+.navgen:hover {
+  transform: scale(1.05);
+}
+
+.add1 {
+  flex: 0.35;
+  align-items: center;
+}
+.add2 {
+  margin-left: 70px;
+  flex: 1;
+}
+.navimdiv {
+  height: 100%;
+  width: 50%;
+  /* background-color: red; */
+}
+.navimdiv a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.navimdiv a img {
+  height: 70%;
+  width: 60%;
+  object-fit: contain;
+  margin-bottom: 7px;
+  /* background-color: blue; */
+  cursor: pointer;
+}
+.genpara {
+  font-size: 25px;
+  /* font-family: "Playwrite DE Grund", cursive; */
+  cursor: pointer;
+  transition: all 0.3s;
+  text-decoration: none;
+  text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.15);
+  font-weight: 600;
+}
+.navparadiv {
+  height: 100%;
+  width: 50%;
+  /* background-color: pink; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.genpara:hover {
+  text-decoration: underline;
+}
+.add3 {
+  flex: 0.2;
+  margin-left: 50px;
+}
+.add3 a {
+  height: 100%;
+  width: 100%;
+}
+.im {
+  height: 80%;
+  width: 80%;
+  transition: all 0.3s;
+  object-fit: contain;
+  margin-top: 5px;
+}
+.im:hover {
+  transform: scale(1.05);
+}
+.im:active {
+  transform: scale(0.05);
+}
+.lst {
+  position: absolute;
+  top: 100%;
+  left: 20px;
+  min-width: 100%;
+  background-color: white;
+  width: 18%;
+  font-size: 25px;
+  overflow: hidden;
+  display: none;
+}
+.genlist {
+  margin-top: 10px;
+
+  width: 100%;
+  list-style: none;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  row-gap: 10px;
+}
+.genlist li {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  transition: all 0.3s;
+  /* border-width: 0px 0px 1px 0px;
+  border-color: black;
+  border-style: solid; */
+  text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.15);
+}
+.genlist li:hover {
+  /* background-color: magenta; */
+  transform: scale(1.05);
+  background-color: maroon;
+  font-weight: 400;
+}
+.genlist li:active {
+  /* background-color: magenta; */
+  transform: scale(0.95);
+}
+.genlist li a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.3s;
+}
+.genlist li a:hover {
+  color: white;
+}
+.navgen:hover .lst {
+  display: block;
+}
+
+/* Media Queries */
+/* 14 Inch */
+@media (min-width: 1281px) and (max-width: 1366px) and (max-height: 768px) {
+  .genpara {
+    font-size: 20px;
+  }
+  .add1 {
+    flex: 0.45;
+  }
+  .add2 {
+    margin-left: 20px;
+  }
+  .navbar {
+    height: 11vh;
+  }
+}
+/* 13 inch */
+@media (max-width: 1280px) and (max-height: 720px) {
+  .genpara {
+    font-size: 18px;
+  }
+  .add1 {
+    flex: 0.45;
+  }
+  .add2 {
+    margin-left: 20px;
+  }
+  .navbar {
+    height: 11vh;
+  }
+}

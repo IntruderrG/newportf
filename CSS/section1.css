@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+.sec1 {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  height: 90vh;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.paracontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 50px;
+  width: 100%;
+  transition: all 0.3s;
+  margin-bottom: 100px;
+}
+.head {
+  width: 100%;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.sliderPara {
+  display: flex;
+  width: 400%;
+  height: 100%;
+  position: relative;
+}
+.sliderPara input {
+  display: none;
+}
+.contentt {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 2s;
+}
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+#radio2:checked ~ .first {
+  margin-left: -25%;
+}
+#radio3:checked ~ .first {
+  margin-left: -50%;
+}
+#radio4:checked ~ .first {
+  margin-left: -75%;
+}
+.top {
+  font-size: 40px;
+  position: relative;
+}
+.bottom {
+  font-size: 20px;
+  position: relative;
+  transition: all 0.3s;
+}
+.headpara {
+  font-size: 100px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+.toppara span button {
+  border: none;
+  background-color: white;
+  font-size: 40px;
+  text-decoration: none;
+  color: maroon;
+  text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s;
+  cursor: pointer;
+  background-color: transparent;
+}
+.toppara span button:hover {
+  opacity: 80%;
+}
+.toppara span button:active {
+  font-size: 35px;
+}
+.toppara strong {
+  font-size: 40px;
+  text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+  color: maroon;
+  font-weight: 400;
+  transition: all 0.3s;
+}
+.popup {
+  height: 600px;
+  width: 400px;
+  position: fixed;
+  left: 40%;
+  top: 22%;
+  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  display: none;
+  opacity: 0;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 50;
+  transition: all 0.3s;
+}
+
+.closepopup {
+  background-color: transparent;
+  z-index: 10;
+  height: 10vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+}
+.pimgcontainer {
+  height: 100%;
+  width: 100%;
+}
+.pimgcontainer img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transform: scale(1.8);
+  object-position: 50%-12px;
+}
+.closebtn {
+  border: none;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  transition: all 0.3s;
+  background-color: transparent;
+}
+#popimg {
+  width: 100%;
+  height: 100%;
+}
+.closebtn:hover {
+  transform: scale(1.01);
+}
+.closebtn:active {
+  transform: scale(0.95);
+}
+.bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Media Queries */
+@media (min-width: 1281px) and (max-width: 1366px) and (max-height: 768px) {
+  .paracontainer {
+    row-gap: 30px;
+  }
+  .head {
+    height: 100px;
+  }
+  .bottom {
+    text-align: center;
+    font-size: 17px;
+  }
+  .headpara {
+    font-size: 60px;
+  }
+  .toppara {
+    font-size: 30px;
+  }
+  .toppara span button {
+    font-size: 30px;
+  }
+  .toppara strong {
+    font-size: 30px;
+  }
+  .popup {
+    height: 400px;
+    width: 300px;
+  }
+  .pimgcontainer img {
+    object-position: 50%-40px;
+  }
+}
+/* 14 inch */
+@media (max-width: 1280px) and (max-height: 720px) {
+  .paracontainer {
+    row-gap: 30px;
+  }
+  .head {
+    height: 90px;
+  }
+  .bottom {
+    text-align: center;
+    font-size: 17px;
+  }
+  .headpara {
+    font-size: 59px;
+  }
+  .toppara {
+    font-size: 28px;
+  }
+  .toppara span button {
+    font-size: 28px;
+  }
+  .toppara strong {
+    font-size: 28px;
+  }
+  .popup {
+    height: 400px;
+    width: 300px;
+  }
+  .pimgcontainer img {
+    object-position: 50%-40px;
+  }
+}
